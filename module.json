@@ -1,0 +1,20 @@
+{
+  "id": "mosh-hackers-handbook",
+  "title": "MoSh — Hacker's Handbook",
+  "description": "Ajoute la gestion du matériel de piratage du Hacker's Handbook : cyberdecks, wristcomms, logiciels, installation/éjection, emplacements.",
+  "version": "0.9.5",
+  "authors": [{ "name": "Darshyne" }],
+  "compatibility": { "minimum": "13", "verified": "13.351" },
+  "esmodules": ["scripts/main.js"],
+  "styles": ["styles/hackers-handbook.css"],
+  "languages": [
+    { "lang": "en", "name": "English", "path": "lang/en.json" },
+    { "lang": "fr", "name": "French / Français", "path": "lang/fr.json" }
+  ],
+  "relationships": {
+    "systems": [{ "id": "mosh", "type": "system" }]
+  },
+  "url": "https://github.com/Darshyne/mosh-hackers-handbook",
+  "manifest": "https://raw.githubusercontent.com/Darshyne/mosh-hackers-handbook/main/module.json",
+  "download": "https://github.com/Darshyne/mosh-hackers-handbook/releases/latest/download/mosh-hackers-handbook.zip"
+}
