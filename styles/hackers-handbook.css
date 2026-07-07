@@ -1,0 +1,276 @@
+/* ===== Intégration dans l'onglet Objets de la feuille mosh ===== */
+.hh-character-panel {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 14px;
+  padding: 8px 10px 10px;
+  background: #c7e0c6;
+  border-radius: 0 0 14px 14px;
+}
+.hh-character-panel .items-list {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.hh-character-panel .items-list:last-child { margin-bottom: 0; }
+.hh-character-panel .hh-main-header { flex-grow: 1.5; }
+.hh-character-panel .item-header .hh-col-type { flex: 0 0 88px; }
+.hh-character-panel .item-header .hh-col-slot { flex: 0 0 84px; }
+.hh-character-panel .item-header .hh-col-value { flex: 0 0 96px; }
+.hh-character-panel .hh-device-row .skill-name,
+.hh-character-panel .hh-software-row .skill-name {
+  flex-grow: 1.5;
+  font-size: 14px;
+  height: 27px;
+  line-height: 23px;
+  margin: 0;
+  cursor: pointer;
+}
+.hh-character-panel .hh-software-row .skill-name {
+  flex: 0 0 276px;
+  max-width: 276px;
+}
+.hh-character-panel .hh-software-list .hh-main-header {
+  flex: 0 0 305px;
+  max-width: 305px;
+}
+.hh-character-panel .hh-device-type { flex: 0 0 88px; }
+.hh-character-panel .hh-device-slots { flex: 0 0 84px; }
+.hh-character-panel .hh-device-row > .skill-stat:last-of-type,
+.hh-character-panel .hh-software-row > .skill-stat { flex: 0 0 96px; }
+.hh-character-panel .item-controls {
+  flex: 0 0 70px;
+  white-space: nowrap;
+}
+.hh-character-panel .hh-wide-controls { flex: 0 0 104px; }
+.hh-character-panel button {
+  width: auto;
+  margin: 0;
+  line-height: 1;
+}
+.hh-character-panel .hh-expand,
+.hh-character-panel .hh-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  min-width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #111;
+}
+.hh-character-panel .hh-expand:hover,
+.hh-character-panel .hh-icon-button:hover {
+  box-shadow: none;
+  color: #666;
+  text-shadow: 0 0 8px #aaa;
+}
+.hh-character-panel .hh-expand-inline {
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  color: #fff;
+  vertical-align: middle;
+}
+.hh-character-panel .hh-expand-inline:hover {
+  color: #ddd;
+  text-shadow: 0 0 8px #fff;
+}
+.hh-character-panel .item-image i {
+  display: block;
+  width: 24px;
+  text-align: center;
+  line-height: 24px;
+}
+.hh-character-panel .hh-device-detail {
+  list-style: none;
+  margin: 0 0 8px 29px;
+  padding: 6px 10px 8px;
+  border-left: 3px solid #111;
+  background: rgba(255, 255, 255, 0.22);
+}
+.hh-character-panel .hh-device-summary {
+  color: #4b4b4b;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+.hh-character-panel .hh-detail-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 27px;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.hh-character-panel .hh-detail-head span { margin-left: auto; color: #666; }
+.hh-character-panel .hh-installed-row {
+  display: grid;
+  grid-template-columns: 29px minmax(190px, 1.1fr) minmax(230px, 1.5fr) 66px;
+  align-items: center;
+  gap: 5px;
+  min-height: 34px;
+  border-top: 1px solid #bbb;
+  padding: 3px 0;
+}
+.hh-character-panel .hh-installed-row .hh-installed-name {
+  font-size: 14px;
+  height: 27px;
+  line-height: 23px;
+  margin: 0;
+  cursor: pointer;
+}
+.hh-character-panel .hh-program-effect {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #555;
+  font-size: 13px;
+}
+.hh-character-panel .hh-actions { text-align: right; white-space: nowrap; }
+.hh-character-panel .hh-empty-slot { color: #777; font-style: italic; }
+.hh-character-panel .hh-empty-label { font-size: 13px; }
+.hh-character-panel .hh-no-slot { margin: 5px 0 0; color: #666; font-style: italic; }
+.hh-native-hidden { display: none !important; }
+
+/* ===== Petites feuilles d'édition MJ ===== */
+.mosh-hackers.hh-edit-sheet .hh-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
+  border-bottom: 2px solid rgba(0,0,0,0.65);
+}
+.mosh-hackers.hh-edit-sheet .profile-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border: none;
+}
+.mosh-hackers.hh-edit-sheet .header-fields { flex: 1; }
+.mosh-hackers.hh-edit-sheet .header-fields input[name="name"] {
+  height: 34px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.mosh-hackers.hh-edit-sheet .hh-subtitle {
+  margin-top: 0.25rem;
+  opacity: 0.72;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.mosh-hackers.hh-edit-sheet .hh-grid {
+  display: grid;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 0.7rem;
+}
+.mosh-hackers.hh-edit-sheet .hh-grid.two { grid-template-columns: 1fr 1fr; }
+.mosh-hackers.hh-edit-sheet label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-weight: 700;
+}
+.mosh-hackers.hh-edit-sheet .hh-wide { grid-column: 1 / -1; display: block; }
+.mosh-hackers.hh-edit-sheet .hh-checks {
+  display: grid;
+  gap: 0.3rem;
+  margin: 0.55rem 0;
+}
+.mosh-hackers.hh-edit-sheet .hh-checks label { display: block; font-weight: 500; }
+.mosh-hackers.hh-edit-sheet textarea { min-height: 88px; resize: vertical; }
+.mosh-hackers.hh-edit-sheet .sheet-footer { margin-top: 0.65rem; }
+
+@media (max-width: 860px) {
+  .hh-character-panel .hh-device-type,
+  .hh-character-panel .hh-col-type { display: none; }
+  .hh-character-panel .hh-installed-row {
+    grid-template-columns: 29px minmax(170px, 1fr) 66px;
+  }
+  .hh-character-panel .hh-program-effect { display: none; }
+}
+
+/* V0.5 — bloc hack vert et bulles logicielles compactes */
+.hh-character-panel .item {
+  border-bottom-color: rgba(0, 0, 0, 0.22);
+}
+.hh-character-panel .hh-software-row .item-image,
+.hh-character-panel .hh-device-row .item-image {
+  flex: 0 0 24px;
+  margin-right: 5px;
+}
+@media (max-width: 860px) {
+  .hh-character-panel .hh-software-row .skill-name {
+    flex: 1 1 auto;
+    max-width: none;
+  }
+  .hh-character-panel .hh-software-list .hh-main-header {
+    flex: 1 1 auto;
+    max-width: none;
+  }
+}
+
+/* V0.5.1 — correction d'alignement des en-têtes du bloc Hack.
+   Les lignes du panneau utilisent une grille fixe plutôt que le flex natif,
+   afin que les titres soient exactement au-dessus des valeurs. */
+.hh-character-panel .hh-device-list > li.item-header,
+.hh-character-panel .hh-device-list > li.hh-device-row {
+  display: grid !important;
+  grid-template-columns: 29px minmax(0, 1fr) 88px 84px 96px 70px;
+  align-items: center;
+  column-gap: 0;
+}
+.hh-character-panel .hh-software-list > li.item-header,
+.hh-character-panel .hh-software-list > li.hh-software-row {
+  display: grid !important;
+  grid-template-columns: 29px 276px 96px 104px;
+  align-items: center;
+  column-gap: 0;
+}
+.hh-character-panel .hh-device-list > li.item-header > *,
+.hh-character-panel .hh-device-list > li.hh-device-row > *,
+.hh-character-panel .hh-software-list > li.item-header > *,
+.hh-character-panel .hh-software-list > li.hh-software-row > * {
+  min-width: 0;
+}
+.hh-character-panel .hh-device-list .hh-main-header,
+.hh-character-panel .hh-software-list .hh-main-header,
+.hh-character-panel .hh-device-row .skill-name,
+.hh-character-panel .hh-software-row .skill-name {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.hh-character-panel .hh-device-list .hh-col-type,
+.hh-character-panel .hh-device-list .hh-col-slot,
+.hh-character-panel .hh-device-list .hh-col-value,
+.hh-character-panel .hh-software-list .hh-col-value,
+.hh-character-panel .hh-device-row .skill-stat,
+.hh-character-panel .hh-software-row .skill-stat {
+  text-align: center;
+}
+.hh-character-panel .hh-device-list .item-controls,
+.hh-character-panel .hh-software-list .item-controls {
+  justify-self: end;
+  width: auto;
+}
+
+@media (max-width: 860px) {
+  .hh-character-panel .hh-device-list > li.item-header,
+  .hh-character-panel .hh-device-list > li.hh-device-row {
+    grid-template-columns: 29px minmax(0, 1fr) 84px 96px 70px;
+  }
+  .hh-character-panel .hh-device-list .hh-col-type,
+  .hh-character-panel .hh-device-row .hh-device-type {
+    display: none;
+  }
+  .hh-character-panel .hh-software-list > li.item-header,
+  .hh-character-panel .hh-software-list > li.hh-software-row {
+    grid-template-columns: 29px minmax(0, 1fr) 96px 104px;
+  }
+}

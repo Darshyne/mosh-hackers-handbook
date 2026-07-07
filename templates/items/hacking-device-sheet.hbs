@@ -1,0 +1,30 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header hh-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+    <div class="header-fields">
+      <input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'MOSHHH.Name'}}" />
+      <div class="hh-subtitle">{{localize "MOSHHH.Device"}}</div>
+    </div>
+  </header>
+  <div class="hh-grid two">
+    <label>{{localize "MOSHHH.Type"}}
+      <select name="hh.category">
+        <option value="deck" {{#if (eq hh.category "deck")}}selected{{/if}}>Deck</option>
+        <option value="wristcomm" {{#if (eq hh.category "wristcomm")}}selected{{/if}}>Wristcomm</option>
+      </select>
+    </label>
+    <label>{{localize "MOSHHH.Cost"}} <input name="system.cost" type="number" value="{{item.system.cost}}" /></label>
+    <label>{{localize "MOSHHH.Quantity"}} <input name="system.quantity" type="number" value="{{item.system.quantity}}" /></label>
+    <label>{{localize "MOSHHH.SoftwareSlots"}} <input name="hh.softwareSlots" type="number" value="{{hh.softwareSlots}}" /></label>
+    <label>{{localize "MOSHHH.ResponseModifier"}} <input name="hh.modifiers.response" type="number" value="{{hh.modifiers.response}}" /></label>
+  </div>
+  <div class="hh-checks">
+    <label><input type="checkbox" name="hh.restrictions.doorsAndAirlocksOnly" {{#if hh.restrictions.doorsAndAirlocksOnly}}checked{{/if}} /> {{localize "MOSHHH.DoorsAirlocksOnly"}}</label>
+    <label><input type="checkbox" name="hh.modifiers.hardenedAsSecure" {{#if hh.modifiers.hardenedAsSecure}}checked{{/if}} /> {{localize "MOSHHH.HardenedAsSecure"}}</label>
+    <label><input type="checkbox" name="hh.modifiers.hackingAsMasterSkill" {{#if hh.modifiers.hackingAsMasterSkill}}checked{{/if}} /> {{localize "MOSHHH.HackingAsMasterSkill"}}</label>
+  </div>
+  <label class="hh-description">{{localize "MOSHHH.Description"}}
+    <textarea name="system.description" rows="5">{{#if localizedDescription}}{{localizedDescription}}{{else}}{{item.system.description}}{{/if}}</textarea>
+  </label>
+  <footer class="sheet-footer flexrow"><button type="submit"><i class="fas fa-save"></i> {{localize "MOSHHH.Save"}}</button></footer>
+</form>
