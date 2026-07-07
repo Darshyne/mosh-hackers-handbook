@@ -24,7 +24,7 @@
     <label><input type="checkbox" name="hh.modifiers.hackingAsMasterSkill" {{#if hh.modifiers.hackingAsMasterSkill}}checked{{/if}} /> {{localize "MOSHHH.HackingAsMasterSkill"}}</label>
   </div>
   <label class="hh-description">{{localize "MOSHHH.Description"}}
-    <textarea name="system.description" rows="5">{{#if localizedDescription}}{{localizedDescription}}{{else}}{{item.system.description}}{{/if}}</textarea>
+    <textarea name="system.description" rows="5">{{item.system.description}}</textarea>
   </label>
   <footer class="sheet-footer flexrow"><button type="submit"><i class="fas fa-save"></i> {{localize "MOSHHH.Save"}}</button></footer>
 </form>

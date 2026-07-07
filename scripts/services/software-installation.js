@@ -1,4 +1,4 @@
-import { ICON_DEVICE, ICON_SOFTWARE, MODULE_ID, OLD_MODULE_ID, SOUND_UPLOAD, localizedSourceDescription } from "../content.js";
+import { ICON_DEVICE, ICON_SOFTWARE, MODULE_ID, OLD_MODULE_ID, SOUND_UPLOAD } from "../content.js";
 
 const t = (key, data = {}) => game.i18n.format(key, data);
 
@@ -109,7 +109,7 @@ export async function useSoftware(software) {
   if (!isSoftware(software)) return;
   const data = hhData(software);
   const activation = data.activation ?? {};
-  const description = localizedSourceDescription(software);
+  const description = software.system?.description ?? "";
   const rollText = activation.roll ? `<p><strong>${t("MOSHHH.AssociatedRollLabel")} :</strong> [[/r ${activation.roll}]]</p>` : "";
 
   await ChatMessage.create({

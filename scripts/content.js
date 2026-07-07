@@ -1,6 +1,6 @@
 export const MODULE_ID = "mosh-hackers-handbook";
 export const OLD_MODULE_ID = "mosh-hackers-handbook-fr";
-export const VERSION = "0.9.4";
+export const VERSION = "0.9.5";
 
 export const ICON_DEVICE = `modules/${MODULE_ID}/assets/icons/hackicondeck.png`;
 export const ICON_SOFTWARE = `modules/${MODULE_ID}/assets/icons/hackiconsoft.png`;
@@ -126,33 +126,3 @@ export const HACKING_EQUIPMENT = [
   baseItem("Credstick Upgrade", 2000, "Swiper System upgrade. Allows credit theft.", "hacking-equipment"),
   baseItem("Remote Upgrade", 4000, "Swiper System upgrade. Allows use up to 20 m.", "hacking-equipment")
 ];
-
-
-export const FR_DESCRIPTIONS = {
-  "KOMPAN-88 Lomo PX “Burndeck”": "<p>Deck compact. 1 emplacement logiciel. Tous les Nœuds ont une Réaction augmentée de +1.</p>",
-  "KOMPAN-88 Lomo PX « Burndeck »": "<p>Deck compact. 1 emplacement logiciel. Tous les Nœuds ont une Réaction augmentée de +1.</p>",
-  "Fedorova-Turner “Onika” Workstation": "<p>Station de travail de piratage. 2 emplacements logiciels.</p>",
-  "Fedorova-Turner « Onika » Workstation": "<p>Station de travail de piratage. 2 emplacements logiciels.</p>",
-  "Bao-Neumann Orion ZX “Superdeck”": "<p>Deck haut de gamme. 5 emplacements logiciels.</p>",
-  "Bao-Neumann Orion ZX « Superdeck »": "<p>Deck haut de gamme. 5 emplacements logiciels.</p>",
-  "Sato Bliss": "<p>Deck de luxe. 3 emplacements logiciels. Traite les Nœuds Renforcés comme des Nœuds Sécurisés.</p>",
-  "Sinclair 2": "<p>Deck d’élite. 3 emplacements logiciels. Traite le Piratage comme une Compétence de Maîtrise.</p>",
-  "DVK “Micro-80X” Printable Timepiece": "<p>Wristcomm minimaliste. Permet uniquement de pirater des portes et des sas.</p>",
-  "DVK « Micro-80X » Printable Timepiece": "<p>Wristcomm minimaliste. Permet uniquement de pirater des portes et des sas.</p>",
-  "Macrogram “MX Tattler”": "<p>Wristcomm de piratage. 1 emplacement logiciel.</p>",
-  "Macrogram « MX Tattler »": "<p>Wristcomm de piratage. 1 emplacement logiciel.</p>",
-  "König-Seidel “Series 6”": "<p>Wristcomm avancé. 2 emplacements logiciels.</p>",
-  "König-Seidel « Series 6 »": "<p>Wristcomm avancé. 2 emplacements logiciels.</p>",
-  "CoyBoy": "<p>Logiciel à usage unique. Réduit la Réaction d’un Nœud de [[/r 1d5]].</p>",
-  "Icebreaker": "<p>Logiciel à usage unique. Convertit un Nœud Sécurisé en Nœud Non sécurisé.</p>",
-  "Icebreaker IB++": "<p>Logiciel à usage unique. Convertit un Nœud Renforcé en Nœud Non sécurisé.</p>",
-  "Keylogger": "<p>Logiciel à usage unique. Enregistre toutes les frappes, saisies ou pressions de boutons sur un Nœud. Installation : [[/r 1d5]] rounds.</p>",
-  "Maze": "<p>Logiciel à usage unique. Ignore un jet de Réaction de NetSec.</p>",
-  "Ripper2": "<p>Logiciel à usage unique. Craqueur de mot de passe par force brute. Prend [[/r 3d10]] rounds.</p>",
-  "Xmap": "<p>Logiciel à usage unique. Récupère une carte de tous les Nœuds d’un Réseau.</p>"
-};
-
-export function localizedSourceDescription(item) {
-  if (game.i18n.lang !== "fr") return item?.system?.description ?? "";
-  return FR_DESCRIPTIONS[item?.name] ?? item?.system?.description ?? "";
-}

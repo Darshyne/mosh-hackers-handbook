@@ -112,3 +112,13 @@ Version de secours basée sur la dernière base stable de l’inventaire hacking
     - `mosh-hackers-handbook`
     - `mosh-hackers-handbook-fr`
 - Le son d’installation / éjection peut de nouveau se jouer, car l’action n’est plus interrompue par l’erreur de scope.
+
+## V0.9.5
+
+- Suppression complète de l’intégration Babele interne.
+- Suppression du dossier `babele/`.
+- Suppression de la recommandation Babele dans le manifest.
+- Suppression du fallback interne de traduction des descriptions de compendiums.
+- Les compendiums restent en anglais comme base source.
+- L’interface du module reste multilingue FR / EN via `lang/fr.json` et `lang/en.json`.
+- Les traductions françaises de compendiums seront gérées plus tard par un module Babele séparé.

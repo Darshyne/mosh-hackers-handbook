@@ -1,4 +1,4 @@
-import { MODULE_ID, OLD_MODULE_ID, localizedSourceDescription } from "../content.js";
+import { MODULE_ID, OLD_MODULE_ID } from "../content.js";
 import { hhData, maxSlots } from "../services/software-installation.js";
 
 export class HackingDeviceSheet extends ItemSheet {
@@ -15,7 +15,7 @@ export class HackingDeviceSheet extends ItemSheet {
     const data = await super.getData(options);
     const hh = hhData(this.item);
     hh.softwareSlots = maxSlots(this.item);
-    return { ...data, hh, localizedDescription: localizedSourceDescription(this.item) };
+    return { ...data, hh };
   }
 
   async _updateObject(event, formData) {

@@ -1,4 +1,4 @@
-import { MODULE_ID, OLD_MODULE_ID, localizedSourceDescription } from "../content.js";
+import { MODULE_ID, OLD_MODULE_ID } from "../content.js";
 import { hhData } from "../services/software-installation.js";
 
 export class SoftwareSheet extends ItemSheet {
@@ -13,7 +13,7 @@ export class SoftwareSheet extends ItemSheet {
 
   async getData(options = {}) {
     const data = await super.getData(options);
-    return { ...data, hh: hhData(this.item), localizedDescription: localizedSourceDescription(this.item) };
+    return { ...data, hh: hhData(this.item) };
   }
 
   async _updateObject(event, formData) {

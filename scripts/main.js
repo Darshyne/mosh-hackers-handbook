@@ -29,14 +29,6 @@ Hooks.once("init", () => {
   game.settings.register(MODULE_ID, "migratedVersion", {
     name: t("MOSHHH.MigratedVersion"), scope: "world", config: false, type: String, default: ""
   });
-
-  if (game.babele) {
-    game.babele.register({
-      module: MODULE_ID,
-      lang: "fr",
-      dir: "babele/fr"
-    });
-  }
 });
 
 Hooks.once("ready", async () => {

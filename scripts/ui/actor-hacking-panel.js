@@ -1,4 +1,4 @@
-import { MODULE_ID, localizedSourceDescription } from "../content.js";
+import { MODULE_ID } from "../content.js";
 import {
   availableSlots, ejectSoftware, hhData, installedSoftware, isDevice,
   isSoftware, maxSlots, openInstallOnDeviceDialog,
@@ -13,7 +13,7 @@ function esc(value = "") {
 }
 
 function textDescription(item) {
-  const html = String(localizedSourceDescription(item));
+  const html = String(item.system?.description ?? "");
   const node = document.createElement("div");
   node.innerHTML = html;
   return node.textContent?.trim() ?? "";
