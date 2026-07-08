@@ -1,0 +1,39 @@
+{
+  "name": "Snatcher",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Copies an entire databank while deleting the original. Takes [[/r 1d10]] rounds.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "cost": 150
+  },
+  "flags": {
+    "mosh-hackers-handbook": {
+      "subtype": "hacking-equipment"
+    },
+    "mosh-hackers-handbook-fr": {
+      "subtype": "hacking-equipment"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "VYwcOLuGCCqU3F4n": 3
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mosh",
+    "systemVersion": "0.6.1",
+    "createdTime": 1783461613176,
+    "modifiedTime": 1783461613176,
+    "lastModifiedBy": "VYwcOLuGCCqU3F4n"
+  },
+  "_id": "0GWPaRRZpPG696cg",
+  "sort": 0,
+  "_key": "!items!0GWPaRRZpPG696cg"
+}

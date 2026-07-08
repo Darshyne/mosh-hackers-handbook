@@ -1,0 +1,39 @@
+{
+  "name": "Faraday Bag",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Small bag that blocks all incoming and outgoing signals from its contents.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "cost": 75
+  },
+  "flags": {
+    "mosh-hackers-handbook": {
+      "subtype": "hacking-equipment"
+    },
+    "mosh-hackers-handbook-fr": {
+      "subtype": "hacking-equipment"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "VYwcOLuGCCqU3F4n": 3
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mosh",
+    "systemVersion": "0.6.1",
+    "createdTime": 1783461613170,
+    "modifiedTime": 1783461613170,
+    "lastModifiedBy": "VYwcOLuGCCqU3F4n"
+  },
+  "_id": "6T6FAYRZ1wObE8jx",
+  "sort": 0,
+  "_key": "!items!6T6FAYRZ1wObE8jx"
+}

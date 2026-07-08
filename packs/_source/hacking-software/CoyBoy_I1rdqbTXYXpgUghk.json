@@ -1,0 +1,60 @@
+{
+  "name": "CoyBoy",
+  "type": "item",
+  "img": "modules/mosh-hackers-handbook/assets/icons/hackiconsoft.png",
+  "system": {
+    "description": "<p>Single-use software. Reduces a Node’s Reaction by [[/r 1d5]].</p>",
+    "quantity": 1,
+    "weight": 0,
+    "cost": 2000
+  },
+  "flags": {
+    "mosh-hackers-handbook": {
+      "subtype": "hacking-software",
+      "slots": 1,
+      "singleUse": true,
+      "installedIn": null,
+      "activation": {
+        "duration": "Instant",
+        "target": "Node",
+        "effectKey": "reduceResponse",
+        "roll": "1d5"
+      }
+    },
+    "mosh-hackers-handbook-fr": {
+      "subtype": "hacking-software",
+      "slots": 1,
+      "singleUse": true,
+      "installedIn": null,
+      "activation": {
+        "duration": "Instant",
+        "target": "Node",
+        "effectKey": "reduceResponse",
+        "roll": "1d5"
+      }
+    },
+    "core": {
+      "sheetClass": "mosh-hackers-handbook.SoftwareSheet"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "VYwcOLuGCCqU3F4n": 3
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mosh",
+    "systemVersion": "0.6.1",
+    "createdTime": 1783461612925,
+    "modifiedTime": 1783461612925,
+    "lastModifiedBy": "VYwcOLuGCCqU3F4n"
+  },
+  "_id": "I1rdqbTXYXpgUghk",
+  "sort": 0,
+  "_key": "!items!I1rdqbTXYXpgUghk"
+}

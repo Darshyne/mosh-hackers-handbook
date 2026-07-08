@@ -1,0 +1,62 @@
+{
+  "name": "Macrogram “MX Tattler”",
+  "type": "item",
+  "img": "modules/mosh-hackers-handbook/assets/icons/hackicondeck.png",
+  "system": {
+    "description": "<p>Hacking wristcomm. 1 software slot.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "cost": 1500
+  },
+  "flags": {
+    "mosh-hackers-handbook": {
+      "subtype": "hacking-device",
+      "category": "wristcomm",
+      "softwareSlots": 1,
+      "restrictions": {
+        "doorsAndAirlocksOnly": false
+      },
+      "modifiers": {
+        "response": 0,
+        "hardenedAsSecure": false,
+        "hackingAsMasterSkill": false
+      }
+    },
+    "mosh-hackers-handbook-fr": {
+      "subtype": "hacking-device",
+      "category": "wristcomm",
+      "softwareSlots": 1,
+      "restrictions": {
+        "doorsAndAirlocksOnly": false
+      },
+      "modifiers": {
+        "response": 0,
+        "hardenedAsSecure": false,
+        "hackingAsMasterSkill": false
+      }
+    },
+    "core": {
+      "sheetClass": "mosh-hackers-handbook.HackingDeviceSheet"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "VYwcOLuGCCqU3F4n": 3
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mosh",
+    "systemVersion": "0.6.1",
+    "createdTime": 1783461612773,
+    "modifiedTime": 1783461612773,
+    "lastModifiedBy": "VYwcOLuGCCqU3F4n"
+  },
+  "_id": "CYkdDtyxfOmCzhzG",
+  "sort": 0,
+  "_key": "!items!CYkdDtyxfOmCzhzG"
+}

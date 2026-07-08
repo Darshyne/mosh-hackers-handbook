@@ -1,0 +1,11 @@
+{
+  "name": "mosh-hackers-handbook",
+  "private": true,
+  "scripts": {
+    "unpack": "for p in hacking-devices hacking-equipment hacking-software; do fvtt package unpack -n $p --in packs --out packs/_source/$p --clean; done",
+    "pack": "for p in hacking-devices hacking-equipment hacking-software; do fvtt package pack -n $p --in packs/_source/$p --out packs; done"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^3.0.4"
+  }
+}

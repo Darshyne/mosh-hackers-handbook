@@ -1,0 +1,39 @@
+{
+  "name": "Brickboy",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Portable dongle that fries hardware when a trigger event occurs: a door opening, a PDA receiving a message, a user logging into a terminal, etc.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "cost": 300
+  },
+  "flags": {
+    "mosh-hackers-handbook": {
+      "subtype": "hacking-equipment"
+    },
+    "mosh-hackers-handbook-fr": {
+      "subtype": "hacking-equipment"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "VYwcOLuGCCqU3F4n": 3
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mosh",
+    "systemVersion": "0.6.1",
+    "createdTime": 1783461613167,
+    "modifiedTime": 1783461613167,
+    "lastModifiedBy": "VYwcOLuGCCqU3F4n"
+  },
+  "_id": "LLqjVxOKAP1tqmIk",
+  "sort": 0,
+  "_key": "!items!LLqjVxOKAP1tqmIk"
+}

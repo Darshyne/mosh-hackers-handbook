@@ -1,0 +1,39 @@
+{
+  "name": "Remote Upgrade",
+  "type": "item",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Swiper System upgrade. Allows use up to 20 m.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "cost": 4000
+  },
+  "flags": {
+    "mosh-hackers-handbook": {
+      "subtype": "hacking-equipment"
+    },
+    "mosh-hackers-handbook-fr": {
+      "subtype": "hacking-equipment"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "VYwcOLuGCCqU3F4n": 3
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mosh",
+    "systemVersion": "0.6.1",
+    "createdTime": 1783461613189,
+    "modifiedTime": 1783461613189,
+    "lastModifiedBy": "VYwcOLuGCCqU3F4n"
+  },
+  "_id": "ZrgMhMGnB6dksQqK",
+  "sort": 0,
+  "_key": "!items!ZrgMhMGnB6dksQqK"
+}

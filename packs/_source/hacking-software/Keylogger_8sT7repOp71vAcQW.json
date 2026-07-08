@@ -1,0 +1,60 @@
+{
+  "name": "Keylogger",
+  "type": "item",
+  "img": "modules/mosh-hackers-handbook/assets/icons/hackiconsoft.png",
+  "system": {
+    "description": "<p>Single-use software. Records every keystroke, input, or button press on a Node. Installation: [[/r 1d5]] rounds.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "cost": 1000
+  },
+  "flags": {
+    "mosh-hackers-handbook": {
+      "subtype": "hacking-software",
+      "slots": 1,
+      "singleUse": true,
+      "installedIn": null,
+      "activation": {
+        "duration": "1d5 rounds",
+        "target": "Node",
+        "effectKey": "keylogger",
+        "roll": "1d5"
+      }
+    },
+    "mosh-hackers-handbook-fr": {
+      "subtype": "hacking-software",
+      "slots": 1,
+      "singleUse": true,
+      "installedIn": null,
+      "activation": {
+        "duration": "1d5 rounds",
+        "target": "Node",
+        "effectKey": "keylogger",
+        "roll": "1d5"
+      }
+    },
+    "core": {
+      "sheetClass": "mosh-hackers-handbook.SoftwareSheet"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "VYwcOLuGCCqU3F4n": 3
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mosh",
+    "systemVersion": "0.6.1",
+    "createdTime": 1783461612933,
+    "modifiedTime": 1783461612933,
+    "lastModifiedBy": "VYwcOLuGCCqU3F4n"
+  },
+  "_id": "8sT7repOp71vAcQW",
+  "sort": 0,
+  "_key": "!items!8sT7repOp71vAcQW"
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Sato Bliss",
+  "type": "item",
+  "img": "modules/mosh-hackers-handbook/assets/icons/hackicondeck.png",
+  "system": {
+    "description": "<p>Luxury deck. 3 software slots. Treats Hardened Nodes as Secure Nodes.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "cost": 12000
+  },
+  "flags": {
+    "mosh-hackers-handbook": {
+      "subtype": "hacking-device",
+      "category": "deck",
+      "softwareSlots": 3,
+      "restrictions": {
+        "doorsAndAirlocksOnly": false
+      },
+      "modifiers": {
+        "response": 0,
+        "hardenedAsSecure": true,
+        "hackingAsMasterSkill": false
+      }
+    },
+    "mosh-hackers-handbook-fr": {
+      "subtype": "hacking-device",
+      "category": "deck",
+      "softwareSlots": 3,
+      "restrictions": {
+        "doorsAndAirlocksOnly": false
+      },
+      "modifiers": {
+        "response": 0,
+        "hardenedAsSecure": true,
+        "hackingAsMasterSkill": false
+      }
+    },
+    "core": {
+      "sheetClass": "mosh-hackers-handbook.HackingDeviceSheet"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "VYwcOLuGCCqU3F4n": 3
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mosh",
+    "systemVersion": "0.6.1",
+    "createdTime": 1783461612766,
+    "modifiedTime": 1783461612766,
+    "lastModifiedBy": "VYwcOLuGCCqU3F4n"
+  },
+  "_id": "oiGAfzGL8m2JzjSf",
+  "sort": 0,
+  "_key": "!items!oiGAfzGL8m2JzjSf"
+}

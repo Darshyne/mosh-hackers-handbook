@@ -1,0 +1,60 @@
+{
+  "name": "Maze",
+  "type": "item",
+  "img": "modules/mosh-hackers-handbook/assets/icons/hackiconsoft.png",
+  "system": {
+    "description": "<p>Single-use software. Ignores one NetSec Reaction roll.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "cost": 500
+  },
+  "flags": {
+    "mosh-hackers-handbook": {
+      "subtype": "hacking-software",
+      "slots": 1,
+      "singleUse": true,
+      "installedIn": null,
+      "activation": {
+        "duration": "Instant",
+        "target": "NetSec Reaction",
+        "effectKey": "ignoreResponse",
+        "roll": ""
+      }
+    },
+    "mosh-hackers-handbook-fr": {
+      "subtype": "hacking-software",
+      "slots": 1,
+      "singleUse": true,
+      "installedIn": null,
+      "activation": {
+        "duration": "Instant",
+        "target": "NetSec Reaction",
+        "effectKey": "ignoreResponse",
+        "roll": ""
+      }
+    },
+    "core": {
+      "sheetClass": "mosh-hackers-handbook.SoftwareSheet"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "VYwcOLuGCCqU3F4n": 3
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mosh",
+    "systemVersion": "0.6.1",
+    "createdTime": 1783461612935,
+    "modifiedTime": 1783461612935,
+    "lastModifiedBy": "VYwcOLuGCCqU3F4n"
+  },
+  "_id": "MjL10eubrHoWYnEh",
+  "sort": 0,
+  "_key": "!items!MjL10eubrHoWYnEh"
+}

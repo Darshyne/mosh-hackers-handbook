@@ -1,0 +1,62 @@
+{
+  "name": "König-Seidel “Series 6”",
+  "type": "item",
+  "img": "modules/mosh-hackers-handbook/assets/icons/hackicondeck.png",
+  "system": {
+    "description": "<p>Advanced wristcomm. 2 software slots.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "cost": 22000
+  },
+  "flags": {
+    "mosh-hackers-handbook": {
+      "subtype": "hacking-device",
+      "category": "wristcomm",
+      "softwareSlots": 2,
+      "restrictions": {
+        "doorsAndAirlocksOnly": false
+      },
+      "modifiers": {
+        "response": 0,
+        "hardenedAsSecure": false,
+        "hackingAsMasterSkill": false
+      }
+    },
+    "mosh-hackers-handbook-fr": {
+      "subtype": "hacking-device",
+      "category": "wristcomm",
+      "softwareSlots": 2,
+      "restrictions": {
+        "doorsAndAirlocksOnly": false
+      },
+      "modifiers": {
+        "response": 0,
+        "hardenedAsSecure": false,
+        "hackingAsMasterSkill": false
+      }
+    },
+    "core": {
+      "sheetClass": "mosh-hackers-handbook.HackingDeviceSheet"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "VYwcOLuGCCqU3F4n": 3
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mosh",
+    "systemVersion": "0.6.1",
+    "createdTime": 1783461612776,
+    "modifiedTime": 1783461612776,
+    "lastModifiedBy": "VYwcOLuGCCqU3F4n"
+  },
+  "_id": "o4SjDAfYYpuGSaj7",
+  "sort": 0,
+  "_key": "!items!o4SjDAfYYpuGSaj7"
+}

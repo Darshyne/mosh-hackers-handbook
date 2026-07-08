@@ -1,0 +1,60 @@
+{
+  "name": "Icebreaker",
+  "type": "item",
+  "img": "modules/mosh-hackers-handbook/assets/icons/hackiconsoft.png",
+  "system": {
+    "description": "<p>Single-use software. Converts a Secure Node into an Unsecured Node.</p>",
+    "quantity": 1,
+    "weight": 0,
+    "cost": 500
+  },
+  "flags": {
+    "mosh-hackers-handbook": {
+      "subtype": "hacking-software",
+      "slots": 1,
+      "singleUse": true,
+      "installedIn": null,
+      "activation": {
+        "duration": "Instant",
+        "target": "Node",
+        "effectKey": "icebreaker",
+        "roll": ""
+      }
+    },
+    "mosh-hackers-handbook-fr": {
+      "subtype": "hacking-software",
+      "slots": 1,
+      "singleUse": true,
+      "installedIn": null,
+      "activation": {
+        "duration": "Instant",
+        "target": "Node",
+        "effectKey": "icebreaker",
+        "roll": ""
+      }
+    },
+    "core": {
+      "sheetClass": "mosh-hackers-handbook.SoftwareSheet"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "VYwcOLuGCCqU3F4n": 3
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "mosh",
+    "systemVersion": "0.6.1",
+    "createdTime": 1783461612927,
+    "modifiedTime": 1783461612927,
+    "lastModifiedBy": "VYwcOLuGCCqU3F4n"
+  },
+  "_id": "9LVD9rV0UZG6Rlyk",
+  "sort": 0,
+  "_key": "!items!9LVD9rV0UZG6Rlyk"
+}
