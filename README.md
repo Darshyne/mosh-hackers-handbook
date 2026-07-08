@@ -2,6 +2,14 @@
 
 Module Foundry VTT v13 pour le système **MoSh - Unofficial Mothership** (`mosh`).
 
+## Mentions légales
+
+Ce module est un projet **non officiel**, non affilié à Tuesday Knight Games.
+Mothership© est la propriété de Tuesday Knight Games —
+[tuesdayknightgames.com](https://www.tuesdayknightgames.com/). Tous les
+droits et marques associés appartiennent à leurs propriétaires respectifs.
+Ce module est distribué gratuitement à but non commercial.
+
 ## Correctif V0.5.1
 
 - Correction de l’alignement des titres de colonnes dans le bloc Hack.
